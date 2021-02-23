@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-gap: 30px;
+}
+
+.product-container {
+    width: 300px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+
+.product-photo {
+    height: 205px;
+    background: url("boots.png");
+    background-size: cover;
+}
+
+.product-details {
+    margin: 30px 25px;
+}
+
+.product-details-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-details-description {
+    font-size: 15px;
+    color: #666;
+}
+
+.product-details-price {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 35px;
+    color: #333;
+}
+
+.product-details-price-currency {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+.product-details-bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details-addToCardBtn {
+    width: 50px;
+    height: 40px;
+    align-self: flex-end;
+    border-radius: 6px;
+    background: #4ed17b url("shopping-cart.svg") no-repeat center;
+    background-position-x: 13px;
+}
